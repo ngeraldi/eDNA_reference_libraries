@@ -1,5 +1,12 @@
 # Training_datasets
 Training datasets for dada2 and insect pipelines, see rep for available primers
+
+####################################################
+####################################################
+####################################################
+
+DADA2
+
 Attributes of the fasta are formatted following the DADA2 protocal with 
 the following taxonomy which will need to be input in DADA2 assigntaxonomy function
 c("superkingdom","kingdom","phylum","class","order","family","genus","species")
