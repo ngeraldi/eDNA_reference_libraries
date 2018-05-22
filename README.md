@@ -7,7 +7,7 @@ c("superkingdom","kingdom","phylum","class","order","family","genus","species")
 
 ####################################################
 
-rbcl mini (Little)
+rbcl mini (F52/R193)  (Little et al. 2014)
 
 The rbcl data base was created by searching the ncbi web site (see R code) on 19 May 2018 using the 
 rentrez and insect packages with the following terms "(rbcl[All Fields] AND (Embryophyta[Organism] OR Plants[All Fields]) 
@@ -26,7 +26,6 @@ https://www.dropbox.com/s/m22u8mbj79rioc1/rbcl_embry_plants_1_10k_dada2_rbclmini
 
 
 ####################################################
-
 
 Euka02 primer (Taberlet 2018)
 cut primer (cutadapt) from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc).
