@@ -11,7 +11,7 @@ Attributes of the fasta are formatted following the DADA2 protocal with
 the following taxonomy which will need to be input in DADA2 assigntaxonomy function
 c("superkingdom","kingdom","phylum","class","order","family","genus","species")
 
-
+To include more sequences in the databases, sequences with either the forward or the reverse primers were kept.
 ####################################################
 
 rbcl mini (F52/R193)  (Little et al. 2014)
