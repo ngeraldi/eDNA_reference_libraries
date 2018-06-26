@@ -30,6 +30,22 @@ only sequences that passed cutadapt
 
 https://www.dropbox.com/s/m22u8mbj79rioc1/rbcl_embry_plants_1_10k_dada2_rbclmini_cut.fasta?dl=0
 
+####################################################
+
+CO1 (mlCOIintF and jgHCO2198)  (Leray et al. 2013)
+
+The CO1 database was created from midori database (http://www.reference-midori.info/index.html) from Midori-unique version 20180221 (Machida et al. 2017). Names were changed for DADA2 format. 
+*Porter and Jajibabaei (2017) recommend 60% idendity match.
+
+All sequences from database (this seems to identify more taxa than when cut to primers)
+
+NEED to ADD !!!!!!!!
+
+
+only sequences that passed cutadapt
+
+
+
 
 
 ####################################################
