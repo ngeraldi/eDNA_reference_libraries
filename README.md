@@ -34,23 +34,25 @@ https://www.dropbox.com/s/m22u8mbj79rioc1/rbcl_embry_plants_1_10k_dada2_rbclmini
 
 CO1 (mlCOIintF and jgHCO2198)  (Leray et al. 2013)
 
-The CO1 database was created from midori database (http://www.reference-midori.info/index.html) from Midori-unique version 20180221 (Machida et al. 2017). Names were changed for DADA2 format. 
-*Porter and Jajibabaei (2017) recommend 60% idendity match.
+Database was created from Porter and Hajibabaei (2018). Dataset was downloaded from https://github.com/terrimporter/CO1Classifier in version 3 in June 2018. Names were changed for DADA2 format. 
 
-All sequences from database (this seems to identify more taxa than when cut to primers)
+*I would recommend 60% idendity match, based on Porter and Hajibabaei (2017).
 
-NEED to ADD !!!!!!!!
-
-
-only sequences that passed cutadapt
+Note: An alternative would be to create database from midori database (http://www.reference-midori.info/index.html) from Midori-unique version 20180221 (Machida et al. 2017). 
 
 
+All sequences from database (this seems to identify more taxa than when cut to primers, 1.28 million sequences)
 
+https://www.dropbox.com/s/51n3pjf40w8sjrz/port_haj_dada_name.fasta?dl=0
 
+Sequences that passed cutadapt and between 100 and 500bp (975080 sequences)
+
+https://www.dropbox.com/s/t0tg148ftyjnpty/port_haj_dada_name_cut_between100and500bp.fasta?dl=0
 
 ####################################################
 
 Euka02 primer (Taberlet 2018)
+
 cut primer (cutadapt) from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc).
 Todo: check 2 warnings, doen't affect assigntaxonomy.
 
