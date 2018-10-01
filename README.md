@@ -26,9 +26,9 @@ All sequences from search
 https://www.dropbox.com/s/g4ldcm5q0wen0qv/rbcl_embry_plants_1_10k__cut.fasta?dl=0
 
 
-only sequences that passed cutadapt
+only sequences that passed trimmedf (function in insect package with default arguments)
 
-https://www.dropbox.com/s/m22u8mbj79rioc1/rbcl_embry_plants_1_10k_dada2_rbclmini_cut.fasta?dl=0
+https://www.dropbox.com/s/jvk0f3khkry552q/rbcl_embry_plants_1_10k_dada2_rbclmini_insect_trim.fasta?dl=0
 
 ####################################################
 
@@ -53,7 +53,7 @@ https://www.dropbox.com/s/t0tg148ftyjnpty/port_haj_dada_name_cut_between100and50
 
 Euka02 primer (Taberlet 2018)
 
-cut primer (cutadapt) from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc).
+Sequences from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc) that passed trimmedf (function in insect package with default arguments) with Euka02 primers.
 Todo: check 2 warnings, doen't affect assigntaxonomy.
 
-https://www.dropbox.com/s/ilh6l5ryln8u63a/silva_euka02_bothprim_dada_names.fasta?dl=0
+https://www.dropbox.com/s/6jzzmkt457ltrs3/silva_euka02_bothprim_dada_names_DNA.fasta?dl=0
