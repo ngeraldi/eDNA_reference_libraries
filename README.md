@@ -56,4 +56,4 @@ Euka02 primer (Taberlet 2018)
 Sequences from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc) that passed trimmedf (function in insect package with default arguments) with Euka02 primers.
 Todo: check 2 warnings, doen't affect assigntaxonomy.
 
-https://www.dropbox.com/s/tubwo8wpfgawf0l/SILVA_132_SSURef_Nr99_tax_silva_DNA_insect_euka02.fasta?dl=0
+https://www.dropbox.com/s/sxmq3s03ppat3c9/SILVA_132_SSURef_Nr99_tax_silva_trunc_DNA_trimmed_euka02_dada_names.fasta?dl=0
