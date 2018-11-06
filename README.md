@@ -5,30 +5,41 @@ Training datasets for dada2 and insect pipelines, see rep for available primers
 ####################################################
 ####################################################
 
-DADA2
-
 Attributes of the fasta are formatted following the DADA2 protocal with 
 the following taxonomy which will need to be input in DADA2 assigntaxonomy function
 c("superkingdom","kingdom","phylum","class","order","family","genus","species")
+
+Format of attributes of fasta for insect have accession|taxaID, then are put in tree formate with learn().
 
 To include more sequences in the databases, sequences with either the forward or the reverse primers were kept.
 ####################################################
 
 rbcl mini (F52/R193)  (Little et al. 2014)
 
-The rbcl data base was created by searching the ncbi web site (see R code) on 19 May 2018 using the 
-rentrez and insect packages with the following terms "(rbcl[All Fields] AND (Embryophyta[Organism] OR Plants[All Fields]) 
-AND 00000000001[SLEN] : 00000010000[SLEN]) NOT (Metazoa[Organism] OR animals[All Fields]))".  
+The rbcl data base was created by searching the ncbi web site (see R code) on 4 Nov. 2018 using the 
+rentrez, taxonomizr, and insect packages with the following terms "(rbcl[All Fields] AND ((Embryophyta[Organism] OR Plants[All Fields] OR Chlorophyta[Organism] OR Phaeophyceae[Organism] OR Rhodophyta[Organism]) AND 00000000001[SLEN] : 00000010000[SLEN]) NOT (Metazoa[Organism] OR animals[All Fields]))".  
 Sequence size was limited to <10,000 bp. 
 
-All sequences from search
+All sequences from search (222,173 sequences)
 
-https://www.dropbox.com/s/g4ldcm5q0wen0qv/rbcl_embry_plants_1_10k__cut.fasta?dl=0
+insect format
+
+https://www.dropbox.com/s/b04s8opfcz1zgs2/ncbi_rbcl_all_insect_names.fasta?dl=0
 
 
 only sequences that passed trimmedf (function in insect package with default arguments)
 
-https://www.dropbox.com/s/jvk0f3khkry552q/rbcl_embry_plants_1_10k_dada2_rbclmini_insect_trim.fasta?dl=0
+DADA2 fomrat
+
+https://www.dropbox.com/s/1d2xug13vxcnsa2/ncbi_rbcl_virtualPCR_rbclmini_dada_names.fasta?dl=0
+
+Insect format
+
+https://www.dropbox.com/s/xarr4uf4u1bgkqe/ncbi_rbcl_virtualPCR_rbclmini_insect_names.fasta?dl=0
+
+Insect trained data
+
+
 
 ####################################################
 
@@ -56,4 +67,10 @@ Euka02 primer (Taberlet 2018)
 Sequences from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc) that passed trimmedf (function in insect package with default arguments) with Euka02 primers.
 Todo: check 2 warnings, doen't affect assigntaxonomy.
 
+DADA2
 https://www.dropbox.com/s/sxmq3s03ppat3c9/SILVA_132_SSURef_Nr99_tax_silva_trunc_DNA_trimmed_euka02_dada_names.fasta?dl=0
+
+Insect trained dataset
+https://www.dropbox.com/s/dw43l3qebtvwuuy/euka02_learn.rds?dl=0
+
+
