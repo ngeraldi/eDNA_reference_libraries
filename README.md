@@ -15,6 +15,8 @@ To include more sequences in the databases, sequences with either the forward or
 ####################################################
 
 rbcl mini (F52/R193)  (Little et al. 2014)
+PRIMER1="GTTGGATTCAAAGCTGGTGTTA"
+PRIMER2="CVGTCCAMACAGTWGTCCATGT"
 
 The rbcl data base was created by searching the ncbi web site (see R code) on 4 Nov. 2018 using the 
 rentrez, taxonomizr, and insect packages with the following terms "(rbcl[All Fields] AND ((Embryophyta[Organism] OR Plants[All Fields] OR Chlorophyta[Organism] OR Phaeophyceae[Organism] OR Rhodophyta[Organism]) AND 00000000001[SLEN] : 00000010000[SLEN]) NOT (Metazoa[Organism] OR animals[All Fields]))".  
@@ -55,7 +57,7 @@ Note: An alternative would be to create database from midori database (http://ww
 
 All sequences from database (this seems to identify more taxa than when cut to primers, 1.28 million sequences)
 
-fasta: dada2 formate
+fasta: dada2 format
 
 https://www.dropbox.com/s/51n3pjf40w8sjrz/port_haj_dada_name.fasta?dl=0
 
@@ -70,16 +72,62 @@ rds: insect trained tree is avaialble at the insect github site
 https://github.com/shaunpwilkinson/insect
 
 ####################################################
+# vertabrate primers  (Riaz et al. 2011)
+PRIMER1="ACTGGGATTAGATACCCC"
+PRIMER2="TAGAACAGGCTCCTCTAG"
 
-Euka02 primer (Taberlet 2018)
+NCBI was searched on November 10 2018 with the following search terms to create initial reference library. These sequenced were then filtered for in silico PCR (using virtualPCR function from insect package) and those that are eukaryotes.
 
-Sequences from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc) that passed trimmedf (function in insect package with default arguments) with Euka02 primers.
+(Vertebrata[Organism] OR Vertebrata[Organism] OR vertebrata[All Fields]) AND (Metazoa[Organism] OR animals[All Fields]) AND 12s[All Fields]) AND 00000000001[SLEN] : 00000010000[SLEN]
+
+Fasta: DADA2 format
+https://www.dropbox.com/s/m4185ay0dje8il4/ncbi_12s_euk_only_dada2_virtualPCR.fasta?dl=0
+
+rds: Insect trained dataset (.rds) and fasta used to create tree
+https://www.dropbox.com/s/80eqqbaeedenzht/12s_ruiz_learn.rds?dl=0
+https://www.dropbox.com/s/10qiuor8uz7be17/ncbi_12s_euk_only_insect_virtualPCR.fasta?dl=0
+
+####################################################
+
+18S rRNA primers
+
+Sequences from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc) that passed virtualPCR (function in insect package with default arguments) with primers defined below.
 Todo: check 2 warnings, doen't affect assigntaxonomy.
+
+##
+Euka02 primers (Taberlet 2018)
+
+PRIMER1='TTTGTCTGSTTAATTSCG'
+PRIMER2='CACAGACCTGTTATTGC' 
 
 Fasta: DADA2 format
 https://www.dropbox.com/s/sxmq3s03ppat3c9/SILVA_132_SSURef_Nr99_tax_silva_trunc_DNA_trimmed_euka02_dada_names.fasta?dl=0
 
-rds: Insect trained dataset
+rds: Insect trained dataset and fasta used to create tree
 https://www.dropbox.com/s/dw43l3qebtvwuuy/euka02_learn.rds?dl=0
+https://www.dropbox.com/s/q0rm6rcs44fa9h2/silva_132_ssuref_nr99_tax_silva_trunc_dna_insect_trim_and_format_euka02.fasta?dl=0
 
+##
+  18s mini  V9    (Amaral-Zettler et al. 2009)
+PRIMER1="CCCTGCCHTTTGTACACAC"
+PRIMER2="CCTTCYGCAGGTTCACCTAC"
+
+Fasta: DADA2 format
+https://www.dropbox.com/s/h5qegdxzdf6tknq/silva_18smini_bothprim_trimmed_dada_names.fasta?dl=0
+
+rds: Insect trained dataset and fasta used to create tree
+https://www.dropbox.com/s/7o9lia8bqsdy8h0/18smini_learn.rds?dl=0
+https://www.dropbox.com/s/umnrktss4atrpds/silva_18smini_bothprim_trimmed_insect_names.fasta?dl=0
+
+####
+   18s Universal  V4  (Stoeck et al 2010)
+PRIMER1="CCAGCASCYGCGGTAATTCC"
+PRIMER2="ACTTTCGTTCTTGATYRA"
+
+Fasta: DADA2 format
+https://www.dropbox.com/s/5ed5l2yp9kfazoy/silva_18suniV4_bothprim_dada_names.fasta?dl=0
+
+rds: Insect trained dataset and fasta used to create tree
+https://www.dropbox.com/s/dw43l3qebtvwuuy/18suniV4_learn.rds?dl=0
+https://www.dropbox.com/s/tf0h0rxu3ogazaf/silva_18suniV4_bothprim_insect_names.fasta?dl=0
 
