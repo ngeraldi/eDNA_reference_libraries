@@ -73,7 +73,8 @@ rds: insect trained tree is avaialble at the insect github site
 https://github.com/shaunpwilkinson/insect
 
 ####################################################
- vertabrate primers  (Riaz et al. 2011)
+
+vertabrate primers  (Riaz et al. 2011)
 PRIMER1="ACTGGGATTAGATACCCC"
 PRIMER2="TAGAACAGGCTCCTCTAG"
 
