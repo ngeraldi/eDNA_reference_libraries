@@ -11,7 +11,6 @@ c("superkingdom","kingdom","phylum","class","order","family","genus","species")
 
 Format of attributes of fasta for insect have accession|taxaID, then are put in tree formate with learn().
 
-To include more sequences in the databases, sequences with either the forward or the reverse primers were kept.
 ####################################################
 
 rbcl mini (F52/R193)  (Little et al. 2014)
@@ -24,7 +23,7 @@ Sequence size was limited to <10,000 bp.
 
 All sequences from search (222,173 sequences)
 
-fasta: insect format
+fasta: insect format without virtualPCR
 
 https://www.dropbox.com/s/b04s8opfcz1zgs2/ncbi_rbcl_all_insect_names.fasta?dl=0
 
@@ -47,6 +46,8 @@ https://www.dropbox.com/s/05067kqwxlurme0/minirbcl_learn.rds?dl=0
 ####################################################
 
 CO1 (mlCOIintF and jgHCO2198)  (Leray et al. 2013)
+PRIMER1="GGWACWGGWTGAACWGTWTAYCCYCC"
+PRIMER2="TANACYTCNGGRTGNCCRAARAAYCA"
 
 Database was created from Porter and Hajibabaei (2018). Dataset was downloaded from https://github.com/terrimporter/CO1Classifier in version 3 in June 2018. Names were changed for DADA2 format. 
 
@@ -63,7 +64,7 @@ https://www.dropbox.com/s/51n3pjf40w8sjrz/port_haj_dada_name.fasta?dl=0
 
 Sequences that passed cutadapt and between 100 and 500bp (975080 sequences)
 
-fasta: data2 foramt
+fasta: data2 format
 
 https://www.dropbox.com/s/t0tg148ftyjnpty/port_haj_dada_name_cut_between100and500bp.fasta?dl=0
 
@@ -92,7 +93,7 @@ https://www.dropbox.com/s/10qiuor8uz7be17/ncbi_12s_euk_only_insect_virtualPCR.fa
 18S rRNA primers
 
 Sequences from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc) that passed virtualPCR (function in insect package with default arguments) with primers defined below.
-Todo: check 2 warnings, doen't affect assigntaxonomy.
+Todo: check 2 warnings, doesn't affect assigntaxonomy().
 
 ##
 Euka02 primers (Taberlet 2018)
