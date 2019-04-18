@@ -1,7 +1,9 @@
 # Training_datasets
 Training datasets for dada2 and insect pipelines, see rep for available primers
 
-Code used to create these is in basic_eDNA_pipline repository
+Code used to create these is in basic_eDNA_pipline repository-
+
+https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.13018
 
 ####################################################
 ####################################################
@@ -19,30 +21,21 @@ rbcl mini (F52/R193)  (Little et al. 2014)
 PRIMER1="GTTGGATTCAAAGCTGGTGTTA"
 PRIMER2="CVGTCCAMACAGTWGTCCATGT"
 
-The rbcl data base was created by searching the ncbi web site (see R code) on 4 Nov. 2018 using the 
+The rbcl data base was created by searching the ncbi web site (see R code) on 18 April 2019 using the 
 rentrez, taxonomizr, and insect packages with the following terms "(rbcl[All Fields] AND ((Embryophyta[Organism] OR Plants[All Fields] OR Chlorophyta[Organism] OR Phaeophyceae[Organism] OR Rhodophyta[Organism]) AND 00000000001[SLEN] : 00000010000[SLEN]) NOT (Metazoa[Organism] OR animals[All Fields]))".  
 Sequence size was limited to <10,000 bp. 
 
-All sequences from search (222,173 sequences)
-
-fasta: insect format without virtualPCR
-
-https://www.dropbox.com/s/b04s8opfcz1zgs2/ncbi_rbcl_all_insect_names.fasta?dl=0
-
-
-only sequences that passed trimmedf (function in insect package with default arguments)
-
 Fasta: DADA2 fomrat
 
-https://www.dropbox.com/s/1d2xug13vxcnsa2/ncbi_rbcl_virtualPCR_rbclmini_dada_names.fasta?dl=0
+https://www.dropbox.com/s/gnaiz5gawv5nciq/ncbi_rbcl_trimmed_rbclmini_dada2_names.fasta?dl=0
 
 Fasta: Insect format
 
-https://www.dropbox.com/s/xarr4uf4u1bgkqe/ncbi_rbcl_virtualPCR_rbclmini_insect_names.fasta?dl=0
+https://www.dropbox.com/s/qk0x22a3ezvd0tb/ncbi_rbcl_trimmed_rbclmini_insect_names.fasta?dl=0
 
 rds: Insect trained tree data
 
-https://www.dropbox.com/s/05067kqwxlurme0/minirbcl_learn.rds?dl=0
+https://www.dropbox.com/s/6q6f5kbwap3fhut/minirbcl_learn.rds?dl=0
 
 
 ####################################################
@@ -105,11 +98,11 @@ PRIMER1='TTTGTCTGSTTAATTSCG'
 PRIMER2='CACAGACCTGTTATTGC' 
 
 Fasta: DADA2 format
-https://www.dropbox.com/s/sxmq3s03ppat3c9/SILVA_132_SSURef_Nr99_tax_silva_trunc_DNA_trimmed_euka02_dada_names.fasta?dl=0
+https://www.dropbox.com/s/abs1k4dcd2qtcde/SILVA_132_trimmed_euka02_dada2_names.fasta?dl=0
 
 rds: Insect trained dataset and fasta used to create tree
+https://www.dropbox.com/s/ew6wmifgb90ybcs/SILVA_132_trimmed_euka02_insect_names.fasta?dl=0
 https://www.dropbox.com/s/dw43l3qebtvwuuy/euka02_learn.rds?dl=0
-https://www.dropbox.com/s/q0rm6rcs44fa9h2/silva_132_ssuref_nr99_tax_silva_trunc_dna_insect_trim_and_format_euka02.fasta?dl=0
 
 ##
   18s mini  V9    (Amaral-Zettler et al. 2009)
@@ -117,11 +110,11 @@ PRIMER1="CCCTGCCHTTTGTACACAC"
 PRIMER2="CCTTCYGCAGGTTCACCTAC"
 
 Fasta: DADA2 format
-https://www.dropbox.com/s/h5qegdxzdf6tknq/silva_18smini_bothprim_trimmed_dada_names.fasta?dl=0
+https://www.dropbox.com/s/b28w4s9xy54xj1v/SILVA_132_trimmed_18smini_dada2_names.fasta?dl=0
 
 rds: Insect trained dataset and fasta used to create tree
-https://www.dropbox.com/s/7o9lia8bqsdy8h0/18smini_learn.rds?dl=0
-https://www.dropbox.com/s/umnrktss4atrpds/silva_18smini_bothprim_trimmed_insect_names.fasta?dl=0
+https://www.dropbox.com/s/fybveejdufs6ktm/SILVA_132_trimmed_18smini_insect_names.fasta?dl=0
+https://www.dropbox.com/s/0t5zv97xjvx7nh8/18smini_learn.rds?dl=0
 
 ####
    18s Universal  V4  (Stoeck et al 2010)
@@ -129,9 +122,9 @@ PRIMER1="CCAGCASCYGCGGTAATTCC"
 PRIMER2="ACTTTCGTTCTTGATYRA"
 
 Fasta: DADA2 format
-https://www.dropbox.com/s/5ed5l2yp9kfazoy/silva_18suniV4_bothprim_dada_names.fasta?dl=0
+https://www.dropbox.com/s/lhv526136tckugf/SILVA_132_trimmed_18s_stoeck_dada2_names.fasta?dl=0
 
 rds: Insect trained dataset and fasta used to create tree
-https://www.dropbox.com/s/dw43l3qebtvwuuy/18suniV4_learn.rds?dl=0
-https://www.dropbox.com/s/tf0h0rxu3ogazaf/silva_18suniV4_bothprim_insect_names.fasta?dl=0
+https://www.dropbox.com/s/x9ju5n0vua6jjzd/SILVA_132_trimmed_18s_stoeck_insect_names.fasta?dl=0
+https://www.dropbox.com/s/47hd0czebm07qz1/18s_stoeck_learn.rds?dl=0
 
