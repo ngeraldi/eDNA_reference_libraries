@@ -1,6 +1,8 @@
 # Training_datasets
 Training datasets for dada2 and insect pipelines, see rep for available primers
 
+Code used to create these is in basic_eDNA_pipline repository
+
 ####################################################
 ####################################################
 ####################################################
