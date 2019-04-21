@@ -78,10 +78,13 @@ NCBI was searched on November 10 2018 with the following search terms to create 
 (Vertebrata[Organism] OR Vertebrata[Organism] OR vertebrata[All Fields]) AND (Metazoa[Organism] OR animals[All Fields]) AND 12s[All Fields]) AND 00000000001[SLEN] : 00000010000[SLEN]
 
 Fasta: DADA2 format
+
 https://www.dropbox.com/s/m4185ay0dje8il4/ncbi_12s_euk_only_dada2_virtualPCR.fasta?dl=0
 
 rds: Insect trained dataset (.rds) and fasta used to create tree
+
 https://www.dropbox.com/s/80eqqbaeedenzht/12s_ruiz_learn.rds?dl=0
+
 https://www.dropbox.com/s/10qiuor8uz7be17/ncbi_12s_euk_only_insect_virtualPCR.fasta?dl=0
 
 ####################################################
