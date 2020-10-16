@@ -103,6 +103,9 @@ PRIMER2='CACAGACCTGTTATTGC'
 Fasta: DADA2 format
 https://www.dropbox.com/s/abs1k4dcd2qtcde/SILVA_132_trimmed_euka02_dada2_names.fasta?dl=0
 
+Fasta: DADA2 format with marine macrophytes from Ortega et al. 2020 MEE
+https://www.dropbox.com/s/iuh47zlh0e8c4ud/SILVA_132_trimmed_euka02_dada2_names_with_ortega_macroalgae.fasta?dl=0
+
 rds: Insect trained dataset and fasta used to create tree
 https://www.dropbox.com/s/ew6wmifgb90ybcs/SILVA_132_trimmed_euka02_insect_names.fasta?dl=0
 https://www.dropbox.com/s/dw43l3qebtvwuuy/euka02_learn.rds?dl=0
