@@ -91,7 +91,7 @@ https://www.dropbox.com/s/10qiuor8uz7be17/ncbi_12s_euk_only_insect_virtualPCR.fa
 
 18S rRNA primers
 
-Sequences from Silva database (SILVA_132_SSURef_Nr99_tax_silva_trunc ; from https://www.arb-silva.de/download/archive/) that passed virtualPCR (function in insect package with default arguments) with primers defined below.
+Sequences from Silva database (SILVA_138.1_SSURef_NR99_tax_silva_trunc ; downloaded 23 Nov. 2020 from https://www.arb-silva.de/download/archive/) that passed virtualPCR (function in insect package with default arguments) with primers defined below.
 Todo: check 2 warnings, doesn't affect assigntaxonomy().
 
 ##
